@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8" />
-    <title>Speed Racer</title>
+    <title>Corrida de Carros</title>
     <!-- Lib -->
     <script src="./lib/p5.min.js"></script>
     <script src="./lib/p5.dom.min.js"></script>
@@ -10,16 +10,13 @@
     <script src="./lib/p5.play.js"></script>
 
     <link rel="stylesheet" href="style.css" />
-    
-    <script src="./js/Game.js"></script>
-    <script src="./js/Form.js"></script>
-    <script src="./js/Player.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/6.3.4/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/6.3.0/firebase-database.js"></script>
 
-    <!-- Firebase SDK CODE ADD BELOW -->
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-database.js"></script>
+
     <script>
-    const firebaseConfig = {
+      var firebaseConfig = {
   apiKey: "AIzaSyATJ6B0S2pR70nyIkPERdvvijzQF9nReJI",
   authDomain: "gol-gti-1988.firebaseapp.com",
   databaseURL: "https://gol-gti-1988-default-rtdb.firebaseio.com",
@@ -28,12 +25,14 @@
   messagingSenderId: "490159586467",
   appId: "1:490159586467:web:762bc0afa0540b880c9316"
 };
-  firebase.initializeApp(firebaseConfig);
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
     </script>
-   
   </head>
   <body>
-    
+    <script src="./js/Game.js"></script>
+    <script src="./js/Form.js"></script>
+    <script src="./js/Player.js"></script>
     <script src="./sketch.js"></script>
   </body>
 </html>
